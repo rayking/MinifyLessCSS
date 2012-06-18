@@ -66,7 +66,8 @@ class Minify_Source {
                           break;
             case 'css'  : $this->contentType = 'text/css';
                           break;
-            case 'less' : $this->contentType = 'text/less';
+            //case 'less' : $this->contentType = 'text/less';
+            case 'less' : $this->contentType = 'text/css';//less mime is a unkwown type And this will ignore the Urlrewrite function.
                           break;
             case 'htm'  : // fallthrough
             case 'html' : $this->contentType = 'text/html';
